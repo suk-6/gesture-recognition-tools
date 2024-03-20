@@ -9,7 +9,7 @@ resultText = ""
 
 def run(im):
     global resultText
-    result = model.process_frame(im)
+    result = model.process_frame(im, 0.6)
     if result is not None:
         if result["label"] is not None:
             resultText += f"{result['label']} "

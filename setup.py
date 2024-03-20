@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="gesture_recognition_tools",
-    version="1.0.0",
+    version="1.0.1",
     author="suk-6",
     author_email="me@suk.kr",
     description="Packages for simple implementations of Gesture Recognition models.",

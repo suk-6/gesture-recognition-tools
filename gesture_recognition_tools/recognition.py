@@ -131,7 +131,7 @@ class recognition:
 
         cv2.imwrite("test.jpg", grid)
 
-    def process_frame(self, originalSource):
+    def process_frame(self, originalSource, action_threshold=0.7):
         source = cv2.cvtColor(originalSource, cv2.COLOR_RGB2BGR)
 
         active_object_id = -1
@@ -174,7 +174,7 @@ class recognition:
                 action_class_score = np.max(recognizer_result)
 
                 print(action_class_label, action_class_score)
-                if action_class_score > 0.7:  # action_threshold
+                if action_class_score > action_threshold:
                     scoreExists = True
 
         person_pos = None
