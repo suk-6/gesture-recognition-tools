@@ -1,2 +1,6 @@
 **/openvino
 test.jpg
+
+**/build
+**/dist
+**/gesture_recognition_tools.egg-info
